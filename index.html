@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- 页面标题和元信息 -->
+    <title>SciLab - 数理实验平台</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 网站图标 -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- 字体和样式表 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700%7CRoboto:300,400,500%7CWork+Sans:400,700&amp;display=swap"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* 针对IE浏览器的警告样式 */
+      .ie-panel {
+        display: none;
+        background: #212121;
+        padding: 10px 0;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+        clear: both;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      html.ie-10 .ie-panel,
+      html.lt-ie-10 .ie-panel {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 针对旧版IE浏览器的警告 -->
+    <div class="ie-panel">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/"
+        ><img
+          src="images/ie8-panel/warning_bar_0000_us.jpg"
+          height="42"
+          width="820"
+          alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
+      /></a>
+    </div>
+    <!-- 页面加载动画 -->
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- 页眉 -->
+      <header class="section page-header">
+        <!-- 导航栏 -->
+        <div class="rd-navbar-wrap">
+          <nav
+            class="rd-navbar rd-navbar-classic"
+            data-layout="rd-navbar-mode"
+            data-xs-layout="rd-navbar-mode"
+            data-sm-layout="rd-navbar-mode"
+            data-md-layout="rd-navbar-mode"
+            data-md-device-layout="rd-navbar-mode"
+            data-lg-layout="rd-navbar-mode"
+            data-lg-device-layout="rd-navbar-mode"
+            data-xl-layout="rd-navbar-mode"
+            data-xxl-layout="rd-navbar-mode"
+            data-xl-device-layout="rd-navbar-mode"
+            data-lg-stick-up-offset="46px"
+            data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+          >
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- 导航栏面板 -->
+                <div class="rd-navbar-panel">
+                  <!-- 网站品牌标志 -->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"
+                      ><img
+                        class="brand-logo-dark"
+                        src="images/logo-default-76x22.svg"
+                        alt=""
+                        width="76"
+                        height="22" /><img
+                        class="brand-logo-light"
+                        src="images/logo-default-76x22.svg"
+                        alt=""
+                        width="76"
+                        height="22"
+                    /></a>
+                  </div>
+                  <!-- 导航栏中心内容 -->
+                  <div class="rd-navbar-center">
+                    <p>正在创造出更多种可能...</p>
+                  </div>
+                  <!-- 导航栏切换按钮 -->
+                  <button
+                    class="rd-navbar-toggle"
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <!-- 导航菜单 -->
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active">
+                        <a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="works.html">Works</a>
+                        <ul class="rd-menu rd-navbar-dropdown">
+                          <li class="rd-dropdown-item">
+                            <a
+                              class="rd-dropdown-link"
+                              href="single-project.html"
+                              >Single Project</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="rd-nav-item">
+                        <a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- 单页内容 -->
+      <section class="section bg-white section-collapse section-single">
+        <div class="section-single-decore">
+          <!-- 背景装饰 -->
+          <div
+            class="section-single-decore-item"
+            style="background-image: url('images/bg-decorate-1.png')"
+            data-parallax='{"rate":50}'
+          ></div>
+          <div
+            class="section-single-decore-item"
+            style="background-image: url('images/bg-decorate-2.png')"
+            data-parallax='{"rate":-50}'
+          ></div>
+        </div>
+        <div class="section-single-inner">
+          <div class="section-xl">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div
+                  class="col-md-10 col-lg-9 col-xl-8 wow fadeInUp"
+                  data-wow-delay=".1s"
+                >
+                  <!-- 页面标题和描述 -->
+                  <h1>SciLab <br />数理实验平台</h1>
+                  <p>
+                    这里是SciLab -
+                    数理实验平台用AI技术构建的教学中的模型，我们致力于将算法灵感转化为可交互的认知体验。让数理课程变得更加直观、有趣。
+                  </p>
+                  <a class="button button-link" href="#"
+                    ><span>Let`s try </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 关于我 -->
+
+      <!-- section features-->
+      <section class="section section-xl bg-gray-100">
+        <div class="container">
+          <div class="box-animate text-center">
+            <h2 class="wow fadeInDown">MY Work</h2>
+            <p class="wow fadeInUp block-lg">
+              目前我们已经做出来的比较完整的模型，更多的细节还需要调整...欢迎给我们提出宝贵的意见，或者更多的灵感...
+            </p>
+            <div class="row row-40 gutters-xl-50">
+              <div class="col-sm-6 col-lg-4">
+                <div class="features-item wow fadeInUp">
+                  <div class="features-item-figure">
+                    <div class="features-item-figure-inner">
+                      <img
+                        src="images/lever.png"
+                        alt=""
+                        width="420"
+                        height="520
+                        "
+                        data-parallax='{"rate":-50}'
+                      />
+                    </div>
+                    <div class="features-item-figure-title figure-primary">
+                      1
+                    </div>
+                  </div>
+                  <div class="features-item-caption">
+                    <h4><a href="lever.html">杠杆动态力臂展示模拟</a></h4>
+                    <p>
+                      First, I get to know my client better and discover what
+                      he/she needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="features-item wow fadeInUp" data-wow-delay=".2s">
+                  <div class="features-item-figure">
+                    <div class="features-item-figure-inner">
+                      <img
+                        src="images/feature-2-141x257.png"
+                        alt=""
+                        width="141"
+                        height="257"
+                        data-parallax='{"rate":-50}'
+                      />
+                    </div>
+                    <div class="features-item-figure-title figure-secondary">
+                      2
+                    </div>
+                  </div>
+                  <div class="features-item-caption">
+                    <h4><a href="#">Concept design</a></h4>
+                    <p>
+                      The creation of a concept helps in the further website
+                      development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="features-item wow fadeInUp" data-wow-delay=".4s">
+                  <div class="features-item-figure">
+                    <div class="features-item-figure-inner">
+                      <img
+                        src="images/feature-3-219x199.png"
+                        alt=""
+                        width="219"
+                        height="199"
+                        data-parallax='{"rate":-50}'
+                      />
+                    </div>
+                    <div class="features-item-figure-title figure-secondary-2">
+                      3
+                    </div>
+                  </div>
+                  <div class="features-item-caption">
+                    <h4><a href="#">Project development</a></h4>
+                    <p>
+                      At this stage, I develop your website and test it to
+                      present the final result.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <a class="button button-link" href="#"
+                  ><span>Featured works</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section awards-->
+      <section class="section section-xl section-collapse bg-white">
+        <div class="container">
+          <div class="row row-30 justify-content-between align-items-center">
+            <div class="col-md-6 col-xl-5">
+              <img
+                class="wow fadeInLeft"
+                src="images/img-awards-1-472x610.png"
+                alt=""
+                width="472"
+                height="610"
+                data-parallax='{"rate":-50}'
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="box-animate">
+                <h2 class="wow fadeInRight">我的提示词思路</h2>
+                <p class="wow fadeInRight" data-wow-delay=".2s">
+                  As an experienced web developer, I’ve received some notable
+                  awards over the years. The prizes listed below helped me to
+                  get more recognition of my projects:
+                </p>
+                <ul class="list-marked wow fadeInRight" data-wow-delay=".4s">
+                  <li>Awwwards Honorable mention</li>
+                  <li>Awwwards Mobile Excellence</li>
+                  <li>CSSDA Website of the day</li>
+                  <li>CSSDA Special Kudos</li>
+                  <li>Awwwards Site Of The Day</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section footer-classic section-collapse">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-xl-7 col-xl-6">
+              <p>
+                欢迎给我们提出宝贵的意见，或者您有更好的灵感<br />
+                <a class="button button-link" href="contacts.html"
+                  ><span>Contact me</span></a
+                >
+              </p>
+            </div>
+          </div>
+          <p class="rights">
+            <span>&copy;&nbsp; </span><span class="copyright-year"></span
+            ><span>&nbsp;</span><span>HawkDev</span><span>.&nbsp;</span
+            ><a href="privacy-policy.html">Privacy Policy</a>.
+            <a
+              target="_blank"
+              href="https://www.mobanwang.com/"
+              title="网站模板"
+              >网站模板</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- 全局脚本 -->
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
